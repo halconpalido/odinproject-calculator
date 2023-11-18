@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root {
+    --green: #A8BD7F;
+    --gray: #BAC4BB;
+    --dark-gray: #223334;
+    --orange: #F16002;
+    --yellow: #F6C47F;
+    --beige: #B7A47C;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--beige);
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+    color: var(--dark-gray);
+    font-family: 'Space Mono', monospace;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--beige);
+    color: var(--dark-gray);
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    margin: 0;
+    padding-bottom: 5px; /* Space between text and icon */
+}
+
+
+#calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+#calculator {
+    background-color: var(--gray);
+    max-width: 90vw;
+    width: 200px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--dark-gray);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#display {
+    flex: 1 1 100%;
+    width: 100%;
+    height: 50px;
+    background-color: var(--green);
+    text-align: right;
+    font-size: 36px;
+    font-family: 'Space Mono';
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 2px var(--dark-gray);
+    color: var(--dark-gray);
+    padding-right: 10px;
+}
+
+#calculator > button {
+    height: 50px;
+    flex: 1 1 22%;
+    border-radius: 100%;
+    font-family: 'Space Mono';
+    font-size: 20px;
+}
+
+.operator {
+    background-color: var(--beige);
+}
+
+.function {
+    background-color: var(--orange);
+}
+
+.digit {
+    background-color: var(--dark-gray);
+    color: var(--beige);
+}
