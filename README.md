@@ -1,4 +1,4 @@
-# top-calculator
+# The Odin Project: Calculator, Foundations Course
 
 This is my solution to the Calculator Project in The Odin Project Foundations Course.
 
